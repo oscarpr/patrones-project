@@ -1,0 +1,13 @@
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\bin\Debug\PatronesProyect.exe
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\bin\Debug\PatronesProyect.pdb
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.csprojResolveAssemblyReference.cache
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.AdminIn.resources
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.AdministradorForm.resources
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.Venta.resources
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.Properties.Resources.resources
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.csproj.GenerateResource.Cache
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.exe
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.pdb
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.ClienteForm.resources
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.ClienteIn.resources
+C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.RegistroCliente.resources
