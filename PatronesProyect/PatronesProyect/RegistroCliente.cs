@@ -23,16 +23,17 @@ namespace PatronesProyecto
             d.RegisterObserver(clienteNuevo);
             d.RegisterObserver(new Observer.TransactionLog());
             
-            MessageBox.Show(d.UpdateRecord());
-
-
             Observer.IObserver clienteNuevo2 = new Observer.RegisteredUser("oscar");
             d.RegisterObserver(clienteNuevo2);
             d.RegisterObserver(new Observer.TransactionLog());
 
-            MessageBox.Show(d.UpdateRecord());
+            d.NotifyObservers("Nuevo carro añadido");
 
-            MessageBox.Show(clienteNuevo.Update("new car"));
+            //MessageBox.Show(d.UpdateRecord());
+
+            //Notifiacion a un usuario especifico
+            //MessageBox.Show(clienteNuevo.Update("new car"));
+
 
 
             

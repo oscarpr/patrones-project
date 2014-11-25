@@ -16,7 +16,7 @@ namespace PatronesProyecto.Observer
         }
 
 
-        private void NotifyObservers(string eventInfo)
+        public void NotifyObservers(string eventInfo)
         {
             Observers.ForEach(o => o.Update(eventInfo));
         }

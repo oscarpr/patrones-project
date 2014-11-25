@@ -16,6 +16,10 @@ namespace PatronesProyecto.Observer
         }
         public string Update(string eventInfo)
         {
+            string DocumentoNotificacion = eventInfo;
+            string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            System.IO.File.WriteAllText(@mydocpath + "\\" + name + ".txt", DocumentoNotificacion);
+
             return ("El usuario" + name + "ha sido notificado del " + eventInfo);
         }
     }
