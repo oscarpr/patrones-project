@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace PatronesProyecto
 {
-    public partial class AdminIn : Form
+    public partial class frmAddAccesorios : Form
     {
-        public AdminIn()
+        public frmAddAccesorios()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace PatronesProyecto
         {
                                  
         
+        }
+
+        private void frmAddAccesorios_Load(object sender, EventArgs e)
+        {
+
         }
 
         

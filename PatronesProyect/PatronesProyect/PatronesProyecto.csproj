@@ -7,7 +7,7 @@
     <ProjectGuid>{86C46EE9-5C75-4CBF-88B9-21AC10DAA5FB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PatronesProyect</RootNamespace>
+    <RootNamespace>PatronesProyecto</RootNamespace>
     <AssemblyName>PatronesProyect</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -44,7 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decorator\AbstractAccessoriesDecorator.cs" />
     <Compile Include="Accesorios.cs" />
+    <Compile Include="Decorator\AddAccessorieClient.cs" />
+    <Compile Include="Decorator\AirbagDecorator.cs" />
+    <Compile Include="Decorator\NitroDecorator.cs" />
+    <Compile Include="Decorator\RinesLujoDecorator.cs" />
+    <Compile Include="Decorator\VidriosElectricosDecorator.cs" />
+    <Compile Include="Decorator\VidriosPolariazdosDecorator.cs" />
+    <Compile Include="frmAccesorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccesorios.Designer.cs">
+      <DependentUpon>frmAccesorios.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +80,7 @@
     <Compile Include="ClienteIn.Designer.cs">
       <DependentUpon>ClienteIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Decorator\IAddAccessorie.cs" />
     <Compile Include="RegistroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAccesorios.resx">
+      <DependentUpon>frmAccesorios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminIn.resx">
       <DependentUpon>AdminIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +122,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\Accesorios.datasource" />
     <None Include="Properties\DataSources\AdminIn.datasource" />

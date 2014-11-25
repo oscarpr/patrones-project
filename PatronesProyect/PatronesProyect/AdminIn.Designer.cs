@@ -1,6 +1,6 @@
 ﻿namespace PatronesProyecto
 {
-    partial class AdminIn
+    partial class frmAddAccesorios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminIn));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddAccesorios));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreAuto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -125,7 +125,7 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Accesorios";
             // 
-            // AdminIn
+            // frmAddAccesorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -139,8 +139,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombreAuto);
             this.Controls.Add(this.label1);
-            this.Name = "AdminIn";
+            this.Name = "frmAddAccesorios";
             this.Text = "AdminIn";
+            this.Load += new System.EventHandler(this.frmAddAccesorios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

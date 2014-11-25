@@ -28,6 +28,11 @@ namespace PatronesProyecto
             client.Show();
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }

@@ -23,7 +23,7 @@ namespace PatronesProyecto
             {
                 if (txtContrasennalogin.Text == "Admin")
                 {
-                    AdminIn admin = new AdminIn();
+                    frmAddAccesorios admin = new frmAddAccesorios();
                     admin.Show();
                     this.Close();
                 }
@@ -36,6 +36,11 @@ namespace PatronesProyecto
             {
                 lblError.Text = "El usuario no existe";
             }
+        }
+
+        private void AdministradorForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

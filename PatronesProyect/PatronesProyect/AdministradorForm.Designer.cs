@@ -64,7 +64,6 @@
             this.txtUsuarioLogin.Name = "txtUsuarioLogin";
             this.txtUsuarioLogin.Size = new System.Drawing.Size(103, 20);
             this.txtUsuarioLogin.TabIndex = 2;
-            
             // 
             // label2
             // 
@@ -114,6 +113,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "AdministradorForm";
             this.Text = "Administrador";
+            this.Load += new System.EventHandler(this.AdministradorForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

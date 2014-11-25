@@ -10,3 +10,16 @@ C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\Patrones
 C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.RegistroCliente.resources
 C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.Venta.resources
 C:\Users\Oscar Andres\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.exe
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyect.pdb
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\bin\Debug\PatronesProyect.exe
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\bin\Debug\PatronesProyect.pdb
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.AdministradorForm.resources
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.ClienteIn.resources
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.RegistroCliente.resources
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.Venta.resources
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.csproj.GenerateResource.Cache
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.frmAddAccesorios.resources
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.frmAccesorios.resources
+C:\Users\Diego\Documents\GitHub\patrones-project\PatronesProyect\PatronesProyect\obj\Debug\PatronesProyecto.Properties.Resources.resources
