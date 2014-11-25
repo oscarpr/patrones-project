@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PatronesProyect
+namespace PatronesProyecto
 {
     public class Cliente : Usuario
     {
@@ -29,11 +29,5 @@ namespace PatronesProyect
             get { return nombreUsuario; }
             set { nombreUsuario = value; }
         }
-
-        public bool Comprar(Automovil auto)
-        {
-            return true;
-        }
-
     }
 }

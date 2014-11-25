@@ -1,4 +1,4 @@
-﻿namespace PatronesProyect
+﻿namespace PatronesProyecto
 {
     partial class Venta
     {

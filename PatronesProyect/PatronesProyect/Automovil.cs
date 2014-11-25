@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PatronesProyect
+namespace PatronesProyecto
 {
     public class Automovil
     {
@@ -12,15 +12,21 @@ namespace PatronesProyect
         private List<Accesorios> listaAccesorios;
         private string codigo;
         private string precio;
+        private string modelo;
+
         
 
-        public Automovil(string name, string marca, List<Accesorios> accesorios, string precio)
+        
+        
+
+        public Automovil(string name, string marca, string modelo, List<Accesorios> accesorios, string precio)
         {
             this.codigo = System.Guid.NewGuid().ToString();
             this.name = name;
             this.marca = marca;
             this.listaAccesorios = accesorios;
             this.precio = precio;
+            this.modelo = modelo;
         }
 
         #region "Propiedades"
@@ -44,6 +50,16 @@ namespace PatronesProyect
         {
             get { return codigo; }
             set { codigo = value; }
+        }
+        public string Precio
+        {
+            get { return precio; }
+            set { precio = value; }
+        }
+        public string Modelo
+        {
+            get { return modelo; }
+            set { modelo = value; }
         }
         #endregion
 

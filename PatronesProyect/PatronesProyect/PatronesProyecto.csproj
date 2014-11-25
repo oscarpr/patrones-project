@@ -61,12 +61,6 @@
     </Compile>
     <Compile Include="Archivo.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="ClienteForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClienteForm.Designer.cs">
-      <DependentUpon>ClienteForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ClienteIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,9 +87,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdministradorForm.resx">
       <DependentUpon>AdministradorForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClienteForm.resx">
-      <DependentUpon>ClienteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClienteIn.resx">
       <DependentUpon>ClienteIn.cs</DependentUpon>
@@ -124,6 +115,7 @@
     <None Include="Properties\DataSources\Cliente.datasource" />
     <None Include="Properties\DataSources\PatronesProyect.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\PatronesProyect.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\PatronesProyecto.Archivo.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\DataSources\Usuario.datasource" />
     <None Include="Properties\DataSources\Venta.datasource" />

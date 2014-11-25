@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PatronesProyect
+namespace PatronesProyecto
 {
     public partial class RegistroCliente : Form
     {
@@ -16,14 +16,14 @@ namespace PatronesProyect
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             Archivo archivo = new Archivo();
             if (LblRPass.Text == LblRPass2.Text)
             {
                 foreach (Cliente c in archivo.Clientes)
                 {
-                    if (c.NombreUsuario == lblRNombreUsuario.Text)
+                    if (lblRNombreUsuario.Text == c.NombreUsuario)
                     {
                         lblRError.Text = "Nombre de usuario ya existe cambielo";
                         lblRNombreUsuario.Text = "";
@@ -45,6 +45,6 @@ namespace PatronesProyect
             {
                 lblRError.Text = "Contraseñas no coinciden";
             }
-        }
+        }*/
     }
 }

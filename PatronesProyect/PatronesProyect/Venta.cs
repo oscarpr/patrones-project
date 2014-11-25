@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PatronesProyect
+namespace PatronesProyecto
 {
     public partial class Venta : Form
     {
@@ -24,7 +24,7 @@ namespace PatronesProyect
 
         private void btnICliente_Click(object sender, EventArgs e)
         {
-            ClienteForm client = new ClienteForm();
+            ClienteIn client = new ClienteIn();
             client.Show();
         }
 

@@ -1,4 +1,4 @@
-﻿namespace PatronesProyect
+﻿namespace PatronesProyecto
 {
     partial class RegistroCliente
     {
@@ -126,7 +126,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Registrarse";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            //this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

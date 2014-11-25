@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PatronesProyect
+namespace PatronesProyecto
 {
     public partial class AdminIn : Form
     {
