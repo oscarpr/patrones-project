@@ -85,6 +85,11 @@
       <DependentUpon>ClienteIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Decorator\IAddAccessorie.cs" />
+    <Compile Include="Observer\Database.cs" />
+    <Compile Include="Observer\IObserver.cs" />
+    <Compile Include="Observer\ISubject.cs" />
+    <Compile Include="Observer\RegisteredUser.cs" />
+    <Compile Include="Observer\TransactionLog.cs" />
     <Compile Include="RegistroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +156,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -18,6 +18,24 @@ namespace PatronesProyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Observer.Database d = new Observer.Database();
+            Observer.IObserver clienteNuevo = new Observer.RegisteredUser("diego");
+            d.RegisterObserver(clienteNuevo);
+            d.RegisterObserver(new Observer.TransactionLog());
+            
+            MessageBox.Show(d.UpdateRecord());
+
+
+            Observer.IObserver clienteNuevo2 = new Observer.RegisteredUser("oscar");
+            d.RegisterObserver(clienteNuevo2);
+            d.RegisterObserver(new Observer.TransactionLog());
+
+            MessageBox.Show(d.UpdateRecord());
+
+            MessageBox.Show(clienteNuevo.Update("new car"));
+
+
+            
 
         }
 
