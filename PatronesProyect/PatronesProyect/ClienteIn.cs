@@ -25,34 +25,42 @@ namespace PatronesProyecto
             comboAutos.DisplayMember = "name";
             comboAutos.ValueMember = "codigo";
 
+            pictureBox1.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
-            //pictureBox4.Visible = false;
-            //pictureBox5.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            imgRines.Visible = false;
+            imgTurbo.Visible = false;
 
             // Transparent background...  
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
-            //pictureBox4.BackColor = Color.Transparent;
-            //pictureBox5.BackColor = Color.Transparent;
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox5.BackColor = Color.Transparent;
+            imgRines.BackColor = Color.Transparent;
+            imgTurbo.BackColor = Color.Transparent;
 
             // Change parent for overlay PictureBox...
             pictureBox2.Parent = pictureBox1;
             pictureBox3.Parent = pictureBox1;
-            //pictureBox4.Parent = pictureBox1;
-            //pictureBox5.Parent = pictureBox1;
+            pictureBox4.Parent = pictureBox1;
+            pictureBox5.Parent = pictureBox1;
+            imgRines.Parent = pictureBox1;
+            imgTurbo.Parent = pictureBox1;
 
 
             // Change overlay PictureBox position in new parent...
             pictureBox2.Location = new Point(0, 0);
             pictureBox3.Location = new Point(0, 0);
-            //pictureBox4.Location = new Point(0, 0);
-            //pictureBox5.Location = new Point(0, 0);
+            pictureBox4.Location = new Point(0, 0);
+            pictureBox5.Location = new Point(0, 0);
+            imgRines.Location = new Point(0, 0);
+            imgTurbo.Location = new Point(0, 0);
         }
 
         private void btnVer_Click(object sender, EventArgs e)
         {
-            pictureBox3.Visible = true;
             string codigoSelected = comboAutos.SelectedValue.ToString();
             foreach (Automovil a in archivo.getAutomoviles())
             {
@@ -64,6 +72,8 @@ namespace PatronesProyecto
                     lblPrecio.Text = a.Precio;
                 }
             }
+
+            pictureBox1.Visible = true;
             
         }
 

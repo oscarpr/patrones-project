@@ -46,6 +46,11 @@ namespace PatronesProyecto
 
         private void CBLAccesorios_ItemCheck(object sender, ItemCheckEventArgs e)
         {
+            ClienteIn formulario2 = new ClienteIn(); ;
+
+            formulario2.pic
+            formulario2.show();
+
             int selectedIndex = CBLAccesorios.SelectedIndex;
             Object selectedItem = CBLAccesorios.SelectedItem;
 
