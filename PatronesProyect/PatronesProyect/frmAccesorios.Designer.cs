@@ -93,6 +93,7 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 17;
             this.comboBox1.Text = "Color";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // frmAccesorios
             // 
@@ -106,6 +107,7 @@
             this.Controls.Add(this.CBLAccesorios);
             this.Name = "frmAccesorios";
             this.Text = "frmAccesorios";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAccesorios_FormClosed);
             this.Load += new System.EventHandler(this.frmAccesorios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

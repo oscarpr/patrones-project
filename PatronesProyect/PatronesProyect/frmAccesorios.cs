@@ -11,6 +11,7 @@ namespace PatronesProyecto
 {         
     public partial class frmAccesorios : Form
     {
+        
         Decorator.IAddAccessorie MyAccessorie = new Decorator.AddAccessorieClient();
 
         public frmAccesorios()
@@ -20,7 +21,7 @@ namespace PatronesProyecto
 
         private void frmAccesorios_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void CBLAccesorios_SelectedIndexChanged(object sender, EventArgs e)
@@ -31,7 +32,10 @@ namespace PatronesProyecto
         private void button1_Click(object sender, EventArgs e)
         {
             string message = MyAccessorie.Add();
-            MessageBox.Show(message);
+            ClienteIn._Mensaje = message;
+            //MessageBox.Show(message);
+            MessageBox.Show("Cambios han sido guardados");
+            Close();
             
         }
 
@@ -46,11 +50,6 @@ namespace PatronesProyecto
 
         private void CBLAccesorios_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            ClienteIn formulario2 = new ClienteIn(); ;
-
-            formulario2.pic
-            formulario2.show();
-
             int selectedIndex = CBLAccesorios.SelectedIndex;
             Object selectedItem = CBLAccesorios.SelectedItem;
 
@@ -75,6 +74,30 @@ namespace PatronesProyecto
                         break;
                 }
             }
+        }
+
+        private void frmAccesorios_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox1.SelectedIndex)
+                {
+                    case 0:
+                        MyAccessorie = new Decorator.ColorRedDecorator(MyAccessorie);
+                        break;
+                    case 1:
+                        MyAccessorie = new Decorator.ColorGreenDecorator(MyAccessorie);
+                        break;
+                    case 2:
+                        MyAccessorie = new Decorator.ColorBlackDecorator(MyAccessorie);
+                        break;
+                    case 3:
+                        MyAccessorie = new Decorator.ColorBlueDecorator(MyAccessorie);
+                        break;
+                }
         }
     }
 }

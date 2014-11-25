@@ -11,6 +11,9 @@ namespace PatronesProyecto
 {
     public partial class ClienteIn : Form
     {
+        public static string _Mensaje;
+
+
         Archivo archivo = new Archivo();
 
         public ClienteIn()
@@ -20,10 +23,13 @@ namespace PatronesProyecto
 
         private void ClienteIn_Load(object sender, EventArgs e)
         {
+
+            _Mensaje = "";
+
             comboAutos.DataSource = null;
             comboAutos.DataSource = archivo.getAutomoviles();
             comboAutos.DisplayMember = "name";
-            comboAutos.ValueMember = "codigo";
+            comboAutos.ValueMember = "codigo";        
 
             pictureBox1.Visible = false;
             pictureBox2.Visible = false;
@@ -74,6 +80,35 @@ namespace PatronesProyecto
             }
 
             pictureBox1.Visible = true;
+            MessageBox.Show(_Mensaje);
+
+            int firstCharacter = -1;
+            firstCharacter = _Mensaje.IndexOf("Nitro");
+
+            if (_Mensaje.IndexOf("Nitro") != -1)
+            {
+                imgTurbo.Visible = true;
+            } 
+            if(_Mensaje.IndexOf("Rines de lujo") != -1)
+            {
+                imgRines.Visible = true;
+            }
+            if (_Mensaje.IndexOf("Rojo") != -1)
+            {
+                pictureBox4.Visible = true;
+            }
+            if (_Mensaje.IndexOf("Verde") != -1)
+            {
+                pictureBox3.Visible = true;
+            }
+            if (_Mensaje.IndexOf("Negro") != -1)
+            {
+                pictureBox5.Visible = true;
+            }
+            if (_Mensaje.IndexOf("Azul") != -1)
+            {
+                pictureBox2.Visible = true;
+            }
             
         }
 
@@ -94,6 +129,14 @@ namespace PatronesProyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            imgRines.Visible = false;
+            imgTurbo.Visible = false;
+
+
             frmAccesorios accesorios = new frmAccesorios();
             accesorios.ShowDialog();
         }
