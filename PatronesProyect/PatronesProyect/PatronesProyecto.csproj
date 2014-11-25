@@ -133,6 +133,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\DataSources\Accesorios.datasource" />
     <None Include="Properties\DataSources\AdminIn.datasource" />
     <None Include="Properties\DataSources\Administrador.datasource" />

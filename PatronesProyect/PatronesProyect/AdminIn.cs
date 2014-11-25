@@ -18,8 +18,7 @@ namespace PatronesProyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-                                 
-        
+            RegistroCliente.databaseUsuarios.NotifyObservers("Hemos añadido un nuevo vehiculo: " + txtNombreAuto.Text + " " + txtMarcaAuto.Text);                      
         }
 
         private void frmAddAccesorios_Load(object sender, EventArgs e)

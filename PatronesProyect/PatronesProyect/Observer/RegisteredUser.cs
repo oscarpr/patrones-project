@@ -8,19 +8,22 @@ namespace PatronesProyecto.Observer
 {
     public class RegisteredUser : IObserver
     {
-        string name;
+        string mail;
 
-        public RegisteredUser(string myname)
+        public RegisteredUser(string mymail)
         {
-            name = myname;
+            mail = mymail;
         }
         public string Update(string eventInfo)
         {
-            string DocumentoNotificacion = eventInfo;
-            string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            System.IO.File.WriteAllText(@mydocpath + "\\" + name + ".txt", DocumentoNotificacion);
+            string DocumentoNotificacion = "Hola " + mail;
+            DocumentoNotificacion += System.Environment.NewLine;
+            DocumentoNotificacion += eventInfo;
 
-            return ("El usuario" + name + "ha sido notificado del " + eventInfo);
+            string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            System.IO.File.WriteAllText(@mydocpath + "\\" + mail + ".txt", DocumentoNotificacion);
+
+            return ("El usuario" + mail + "ha sido notificado del " + eventInfo);
         }
     }
 }

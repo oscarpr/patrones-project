@@ -11,6 +11,10 @@ namespace PatronesProyecto
 {
     public partial class RegistroCliente : Form
     {
+
+        public static Observer.Database databaseUsuarios = new Observer.Database();
+
+
         public RegistroCliente()
         {
             InitializeComponent();
@@ -18,25 +22,18 @@ namespace PatronesProyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Observer.Database d = new Observer.Database();
-            Observer.IObserver clienteNuevo = new Observer.RegisteredUser("diego");
-            d.RegisterObserver(clienteNuevo);
-            d.RegisterObserver(new Observer.TransactionLog());
-            
-            Observer.IObserver clienteNuevo2 = new Observer.RegisteredUser("oscar");
-            d.RegisterObserver(clienteNuevo2);
-            d.RegisterObserver(new Observer.TransactionLog());
+            if (lblREmail.Text == "")
+            {
+                MessageBox.Show("Debes ingresar un email");
+            }
+            else
+            {
+                Observer.IObserver clienteNuevo = new Observer.RegisteredUser(lblREmail.Text);
+                databaseUsuarios.RegisterObserver(clienteNuevo);
 
-            d.NotifyObservers("Nuevo carro añadido");
-
-            //MessageBox.Show(d.UpdateRecord());
-
-            //Notifiacion a un usuario especifico
-            //MessageBox.Show(clienteNuevo.Update("new car"));
-
-
-
-            
+                //Notifiacion a un usuario especifico
+                clienteNuevo.Update("Te hemos agregado a nuestra lista de notifiación para que estes enterado de las ultimas actualizaciones de nuestros vehiculos");
+            }          
 
         }
 
