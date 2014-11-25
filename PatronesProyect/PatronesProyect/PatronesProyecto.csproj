@@ -48,6 +48,10 @@
     <Compile Include="Accesorios.cs" />
     <Compile Include="Decorator\AddAccessorieClient.cs" />
     <Compile Include="Decorator\AirbagDecorator.cs" />
+    <Compile Include="Decorator\ColorBlackDecorator.cs" />
+    <Compile Include="Decorator\ColorBlueDecorator.cs" />
+    <Compile Include="Decorator\ColorGreenDecorator.cs" />
+    <Compile Include="Decorator\ColorRedDecorator.cs" />
     <Compile Include="Decorator\NitroDecorator.cs" />
     <Compile Include="Decorator\RinesLujoDecorator.cs" />
     <Compile Include="Decorator\VidriosElectricosDecorator.cs" />
